@@ -1,0 +1,12 @@
+package DeHsMannheimSS17TPEGrp01Übung2;
+
+import org.junit.Test;
+
+public class AktieTest {
+
+	@Test
+	public void test() {
+		Aktie as = new Aktie("Sedat", 100, "10.12", 11, 3);
+	}
+
+}

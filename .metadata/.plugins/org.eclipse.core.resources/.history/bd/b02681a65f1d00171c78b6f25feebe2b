@@ -1,0 +1,11 @@
+package DeHsMannheimSS17TPEGrp01;
+
+import org.junit.Test;
+
+public class ImmobilienTest {
+
+	@Test
+	public void test() {
+	}
+
+}

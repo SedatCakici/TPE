@@ -1,0 +1,17 @@
+package DeHsMannheimSS17TPEGrp01Übung2;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class FestgeldTest {
+
+	@SuppressWarnings("deprecation")
+	@Test
+	public void test() {
+		Festgeld fg = new Festgeld("Sedat", 100, "15.11", 6);
+		float output = fg.zins();
+		assertEquals(110, output);
+	}
+
+}

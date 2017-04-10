@@ -1,0 +1,16 @@
+package DeHsMannheimSS17TPEGrp01Übung2;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class AktieTest {
+
+	@Test
+	public void test() {
+		Aktie as = new Aktie("Sedat", 100, "10.12", 1.3, 3);
+		long output = as.aktuellerStand();
+		assertEquals(100, output);
+	}
+
+}

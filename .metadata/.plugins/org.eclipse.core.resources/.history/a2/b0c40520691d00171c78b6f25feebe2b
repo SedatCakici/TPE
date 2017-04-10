@@ -1,0 +1,28 @@
+package DeHsMannheimSS17TPEGrp01Übung2;
+
+public class Festgeld extends Main {
+	protected final String name; // <-- Abtract rein...
+	protected final long kaufpreis; // <-- Abtract rein...
+	protected final String kaufdatum; // <-- Abtract rein...
+	protected final long zeit;
+	protected final long zinssatz = 5; // <-- ist Fest der 5 Prozent habe ich
+										// improvisiert
+	private long betrag = 0;
+
+	public Festgeld(String name, long kaufpreis, String kaufdatum, long zeit) {
+		super();
+		this.name = name;
+		this.kaufpreis = kaufpreis;
+		this.kaufdatum = kaufdatum;
+		this.zeit = zeit;
+	}
+
+	public float zins() {
+		float betrag1 =  (float) (kaufpreis * (Math.pow((1 + (zinssatz / 100)), zeit)));
+		return betrag1;
+	}
+
+	public void auskunft() {
+		System.out.println(zins());
+	}
+}

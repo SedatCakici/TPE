@@ -1,0 +1,14 @@
+package DeHsMannheimSS17TPEGrp01;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class FestgeldTest {
+
+	@Test
+	public void test() {
+		Festgeld fg = new Festgeld(5,2,"€",100,"10.12",)
+	}
+
+}

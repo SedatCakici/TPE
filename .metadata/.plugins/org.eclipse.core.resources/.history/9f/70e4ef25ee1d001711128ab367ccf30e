@@ -1,0 +1,31 @@
+package DeHsMannheimSS17TPEGrp01Übung2;
+
+public class Immobilien extends Main {
+	protected final String name; // <-- Abtract rein...
+	protected long kaufpreis; // <-- Abtract rein...
+	protected final String kaufdatum; // <-- Abtract rein...
+	protected final long zeit;
+	protected final long anzahl;
+	private final long konstatanteSenkungDesKaufpreisBisMaxNull = 1000;
+	private long aktuellerPreis = 0;
+
+	public Immobilien(String name, long kaufpreis, String kaufdatum,long zeit, long anzahl) {
+		this.name = name;
+		this.kaufpreis = kaufpreis;
+		this.kaufdatum = kaufdatum;
+		this.zeit = zeit;
+		if (anzahl > 1) {
+			this.anzahl = 1;
+		} else if (anzahl < 0) {
+			this.anzahl = 0;
+		} else {
+			this.anzahl = anzahl;
+		}
+	}
+	public void wertSinkung(){
+		if(kaufpreis < (konstatanteSenkungDesKaufpreisBisMaxNull* zeit)){
+			aktuellerPreis = 0;
+		}
+		aktuellerPreis = kaufpreis - (zeit * 1000);
+	}
+}

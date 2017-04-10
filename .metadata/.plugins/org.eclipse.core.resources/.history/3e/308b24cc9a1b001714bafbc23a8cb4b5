@@ -1,0 +1,16 @@
+package DeHsMannheimSS17TPEGrp01;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+	public class Portfolio{
+		private final String Name;
+		private final long Kaufpreis;
+		private final String Kaufdatum;
+	}
+}
+

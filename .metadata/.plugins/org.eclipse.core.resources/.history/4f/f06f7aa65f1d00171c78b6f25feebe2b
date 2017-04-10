@@ -1,0 +1,25 @@
+package DeHsMannheimSS17TPEGrp01;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+	}
+
+	public abstract class Portfolio {
+		int i = 0;
+		// protected final String name;
+		// protected final long kaufpreis;
+		// protected final String kaufdatum;
+		// protected final long anzahl;
+		//
+		// protected Portfolio(String name, long kaufpreis, String kaufdatum,
+		// long anzahl) {
+		// this.name = name;
+		// this.kaufpreis = kaufpreis;
+		// this.kaufdatum = kaufdatum;
+		// this.anzahl = anzahl;
+		// }
+		//
+	}
+}

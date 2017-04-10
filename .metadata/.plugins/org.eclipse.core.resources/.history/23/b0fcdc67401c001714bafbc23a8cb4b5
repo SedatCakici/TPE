@@ -1,0 +1,82 @@
+package DeHsMannheimSS17TPEGrp01;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+	}
+
+	public abstract class Portfolio {
+		// protected final String name;
+		// protected final long kaufpreis;
+		// protected final String kaufdatum;
+		// protected final long anzahl;
+		//
+		// protected Portfolio(String name, long kaufpreis, String kaufdatum,
+		// long anzahl) {
+		// this.name = name;
+		// this.kaufpreis = kaufpreis;
+		// this.kaufdatum = kaufdatum;
+		// this.anzahl = anzahl;
+		// }
+		//
+	}
+
+	public class Aktie extends Portfolio {
+
+		public long kurs;
+		protected final String name;
+		protected final long kaufpreis;
+		protected final String kaufdatum;
+		protected final long anzahl;
+
+		public Aktie(long kurs, String name, long kaufpreis, String kaufdatum, long anzahl) {
+			this.kurs = kurs;
+			this.name = name;
+			this.kaufpreis = kaufpreis;
+			this.kaufdatum = kaufdatum;
+			this.anzahl = anzahl;
+		}
+
+		public long aktuellerStand() {
+			return kurs * kaufpreis;
+		}
+		// kann Gehandelt werden
+	}
+
+	public class Rentenpapier extends Portfolio {
+		protected final String name;
+		protected final long kaufpreis;
+		protected final String kaufdatum;
+		protected final long anzahl;
+
+		public Rentenpapier(String name, long kaufpreis, String kaufdatum, long anzahl) {
+			super();
+			this.name = name;
+			this.kaufpreis = kaufpreis;
+			this.kaufdatum = kaufdatum;
+			this.anzahl = anzahl;
+		}
+
+	}
+
+	public class Immobilien extends Portfolio {
+		protected final String name;
+		protected final long kaufpreis;
+		protected final String kaufdatum;
+		protected final long anzahl;
+
+		public Immobilien(String name, long kaufpreis, String kaufdatum, long anzahl) {
+			super();
+			this.name = name;
+			this.kaufpreis = kaufpreis;
+			this.kaufdatum = kaufdatum;
+			this.anzahl = anzahl;
+		}
+
+	}
+
+	public class Fonds {
+
+	}
+}

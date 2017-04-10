@@ -1,0 +1,25 @@
+package DeHsMannheimSS17TPEGrp01;
+
+import DeHsMannheimSS17TPEGrp01.Main.Portfolio;
+
+public class Immobilien extends Main {
+	protected final String name;
+	protected final long kaufpreis;
+	protected final String kaufdatum;
+	protected final long anzahl;
+
+	public Immobilien(String name, long kaufpreis, String kaufdatum, long anzahl) {
+		this.name = name;
+		this.kaufpreis = kaufpreis;
+		this.kaufdatum = kaufdatum;
+		if (anzahl > 1) {
+			this.anzahl = 1;
+		} else if (anzahl < 0) {
+			this.anzahl = 0;
+		} else {
+			this.anzahl = anzahl;
+		}
+	}
+	
+	// Wert limes -> 0
+}

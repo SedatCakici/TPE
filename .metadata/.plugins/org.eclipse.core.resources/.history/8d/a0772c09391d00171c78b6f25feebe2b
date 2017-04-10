@@ -1,0 +1,8 @@
+package DeHsMannheimSS17TPEGrp01;
+
+import java.util.ArrayList;
+
+public class Fonds {
+ ArrayList<Object> zsm = new ArrayList<Object>();
+
+}

@@ -1,0 +1,16 @@
+package DeHsMannheimSS17TPEGrp01Übung2;
+
+public class Main {
+	public abstract class Portfolio {
+		protected final String name;
+		protected final long kaufpreis;
+		protected final String kaufdatum;
+
+		public Portfolio(String name, long kaufpreis, String kaufdatum) {
+			this.name = name;
+			this.kaufpreis = kaufpreis;
+			this.kaufdatum = kaufdatum;
+		}
+
+	}
+}

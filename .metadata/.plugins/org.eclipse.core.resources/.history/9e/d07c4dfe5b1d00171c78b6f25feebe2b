@@ -1,0 +1,10 @@
+package DeHsMannheimSS17TPEGrp01;
+
+import java.util.ArrayList;
+
+public class Fonds {
+	ArrayList<Object> zsm = new ArrayList<Object>();
+	Aktie aktie = new Aktie("Hummel GmbH", 150000, "09.04.2017", 1.1, 2);
+	Rentenpapier rp = new Rentenpapier("BASF", 10000, "10.12", 5, 5);
+
+}

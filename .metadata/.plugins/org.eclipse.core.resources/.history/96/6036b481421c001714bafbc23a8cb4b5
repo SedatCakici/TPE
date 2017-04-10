@@ -1,0 +1,25 @@
+package DeHsMannheimSS17TPEGrp01;
+
+import DeHsMannheimSS17TPEGrp01.Main.Portfolio;
+
+	public class Aktie extends Main{
+
+		public long kurs;
+		protected final String name;
+		protected final long kaufpreis;
+		protected final String kaufdatum;
+		protected final long anzahl;
+
+		public Aktie(long kurs, String name, long kaufpreis, String kaufdatum, long anzahl) {
+			this.kurs = kurs;
+			this.name = name;
+			this.kaufpreis = kaufpreis;
+			this.kaufdatum = kaufdatum;
+			this.anzahl = anzahl;
+		}
+
+		public long aktuellerStand() {
+			return kurs * kaufpreis;
+		}
+		// kann Gehandelt werden
+	}

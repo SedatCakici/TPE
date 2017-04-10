@@ -1,0 +1,26 @@
+package DeHsMannheimSS17TPEGrp01;
+
+public class Festgeld extends Main {
+	protected final String name; // <-- Abtract rein...
+	protected final long kaufpreis; // <-- Abtract rein...
+	protected final String kaufdatum; // <-- Abtract rein...
+	protected final long zeit;
+	protected final long zinssatz;
+
+	public Festgeld(String name, long kaufpreis, String kaufdatum, long zeit, long zinssatz) {
+		super();
+		this.name = name;
+		this.kaufpreis = kaufpreis;
+		this.kaufdatum = kaufdatum;
+		this.zeit = zeit;
+		this.zinssatz = zinssatz;
+	}
+
+	public long zins() {
+		return ((long) (kaufpreis * (Math.pow(zeit, (1 + (zinssatz / 100))))));
+	}
+
+	public void auskunft() {
+		System.out.println(zins());
+	}
+}

@@ -1,0 +1,17 @@
+package DeHsMannheimSS17TPEGrp01Übung2;
+
+import java.util.ArrayList;
+
+public class Collection {
+	ArrayList<Aktie> aktienn = new ArrayList<Aktie>();
+	ArrayList<Rentenpapier> rentenpapierr = new ArrayList<Rentenpapier>();
+	
+	
+	public void aktienAnsammlung(Aktie e){
+		aktienn.add(e);
+	}
+	
+	public void rentenAnsammlung(Rentenpapier e){
+		rentenpapierr.add(e);
+	}
+}

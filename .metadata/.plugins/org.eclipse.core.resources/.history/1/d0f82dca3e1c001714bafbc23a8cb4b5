@@ -1,0 +1,17 @@
+package DeHsMannheimSS17TPEGrp01;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class FestgeldTest {
+
+	@Test
+	public void test() {
+		Festgeld
+		fg = new Festgeld(5, 2, "€", 1000, "10.12");
+		long output = fg.zins();
+		assertEquals(1000,fg);
+	}
+
+}
